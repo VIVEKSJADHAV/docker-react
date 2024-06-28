@@ -3,9 +3,6 @@ services:
   web:
     build: 
       context: .
-      dockerfile : frontend/Dockerfile.dev
+      dockerfile : frontend/Dockerfile
     ports: 
-      - "3000:3000"
-    volumes:
-      - /home/node/app/node_modules
-      - . /home/node/app 
+      - "80:80"
